@@ -1,22 +1,27 @@
 #             0         1         2         3
-students = ['Isabel', 'Sarah', 'Kim', 'Tanner']
+students = ['Chris', 'Jonny', 'Guilia', 'Saki']
 
-# ## CRUD
+## CRUD
 # Create
-students << "Yvonne"
-students.push('Radek')
+students.push("Buruburu")
+students << "Kyle"
+students.insert(1, "Curtis")
 p students
+# check out shift unshift pop and other methods
 
-# Read
-p students[1]
+# Read (one or many elements)
+p students[2]
+p students[2..4]
+p students[2..]
+p students[..-2]
 
 # Update
-p students[0] = 'Super Isabel'
+students[0] = "Super Chris"
 p students
 
 # Delete
+# students.delete("Super Chris")
 students.delete_at(0)
-students.delete("Tanner")
 p students
 
 # Iterating (unleach your coder instinct)!

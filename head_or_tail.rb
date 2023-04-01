@@ -1,18 +1,16 @@
 # Build a head or tail game
 puts "Head or Tail?"
-user_answer = gets.chomp.downcase
-computer_pick = ['head', 'tail'].sample
+user_input = gets.chomp
+computer_pick = ["head", "tail"].sample
 
-result = nil
-
-# if user_answer == computer_pick
-#   result = 'win'
+# if user_input == computer_pick
+#   result = "win"
 # else
-#   result = 'lose'
+#   result = "lose"
 # end
 
-# TERNARY OPERATOR
-# variable = condition ? value_if_true : value_if_false
-result = (user_answer == computer_pick) ? 'win' : 'lose'
+# Ternary operator
+# variable = ( condition ? if_true : if_false )
+result = user_input == computer_pick ? "win" : "lose"
 
-puts "You #{result}"
+puts "You #{result}!"

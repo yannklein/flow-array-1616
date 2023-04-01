@@ -4,19 +4,22 @@
 puts "How old are you?"
 age = gets.chomp.to_i
 
-is_adult = (age >= 18)
-# p is_adult.class
+is_adult = age >= 18
+p is_adult.class
 
-if is_adult
-  puts "You can vote"
-else
-  puts "You cannot vote"
-end
-
-do_that if condition
+# if is_adult
+#   puts "You can vote"
+# end
+# do_that if condition
 puts "You can vote" if is_adult
 
-# if !(is_adult)
+# if is_adult
+#   puts "You can vote"
+# else
+#   puts ":You cannot vote"
+# end
+
+# if !is_adult
 #   puts "You cannot vote"
 # end
 
@@ -24,6 +27,6 @@ puts "You can vote" if is_adult
 #   puts "You cannot vote"
 # end
 
-# if nil
-#   puts "I am true"
+# if "hello"
+#   puts "That condition is true"
 # end

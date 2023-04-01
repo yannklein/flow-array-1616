@@ -3,31 +3,31 @@
 puts "What do you want to do? read|write|exit"
 choice = gets.chomp
 
-# if choice == 'read'
-#   puts "Reading file..."
-# elsif choice == 'write'
-#   puts "Writing file..."
-# elsif choice == 'exit'
-#   puts "Good bye"
+# if choice == "read"
+#   puts "Reading the data..."
+# elsif choice == "write"
+#   puts "Writing the data..."
+# elsif choice == "exit"
+#   puts "Good bye!"
 # else
-#   puts "Wrong command! use read|write|exit"
+#   puts "Invalid command, choose: read|write|exit"
 # end
 
 # case choice
-# when 'read'
-#   puts "Reading file..."
-# when 'write'
-#   puts "Writing file..."
-# when 'exit'
-#   puts "Good bye"
+# when "read"
+#   puts "Reading the data..."
+# when "write"
+#   puts "Writing the data..."
+# when "exit"
+#   puts "Good bye!"
 # else
-#   puts "Wrong command! use read|write|exit"
+#   puts "Invalid command, choose: read|write|exit"
 # end
 
 case choice
-when 'read' then puts "Reading file..."
-when 'write' then puts "Writing file..."
-when 'exit' then puts "Good bye"
+when "read" then puts "Reading the data..."
+when "write" then puts "Writing the data..."
+when "exit" then puts "Good bye!"
 else
-  puts "Wrong command! use read|write|exit"
+  puts "Invalid command, choose: read|write|exit"
 end

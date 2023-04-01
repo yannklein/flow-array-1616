@@ -4,5 +4,15 @@
 puts "Give a number"
 number = gets.chomp.to_i
 
-result = number.even? ? 'even' : 'odd'
-puts "Your number is #{result}"
+# for other coding lang than Ruby
+# number % 2 == 0 
+
+# if number.even?
+#   result =  "Even"
+# else
+#   result =  "Odd"
+# end
+
+result = number.even? ? "Even" : "Odd"
+
+p result
