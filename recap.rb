@@ -1,33 +1,35 @@
-# Cmd / OR Ctrl / -> comment/uncomment out code
-# Cmd / D OR Ctrl D -> multiselection 
-# Opt Click OR Ctrl Click -> multicursors
-# Opt + up/down OR Ctrl + up/down -> moving a code line up or down
-
 ### Recap
 
 # ## Data types
-# p "hello".class
-# p 42.class
-# p 42.2.class
+# p "Senie".class
+# p 13.class
+# p 32.2.class
+# p (1..10).class
 # p true.class
 # p false.class
 # p [1,2,3].class
-# p ({ a: 2 }).class
-# p (1..10).class
-# p nil.class
+# p (2/3).class
+# p (2/3)
+# p (2.0/3)
+# p (2.fdiv(3))
 
 # ## Variables
+first_name = "Chiaki"
+
 # puts "How old are you?"
+# # define age and assign the user input to age
 # age = gets.chomp.to_i
 
-# # age = age + 1
+# puts "You are #{age} years-old"
+
+# # re-assign a value to age
 # age += 1
+# # age = age + 1
 
 # puts "You will be #{age} years-old next year."
 
 # ## Methods
-# Method name
-# Method signature: params (type?), return (type)
+# Method signature: name, params (type?), return (type)
 
 # method definition
 def say_hello(name)
@@ -35,6 +37,4 @@ def say_hello(name)
 end
 
 # method call, passing argument(s)
-sentence = say_hello("Burburu")
-
-puts sentence
+puts say_hello("Ramone")

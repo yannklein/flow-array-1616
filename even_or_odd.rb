@@ -1,18 +1,21 @@
 # Build a program telling whether
 # the user number is even or odd
-
 puts "Give a number"
 number = gets.chomp.to_i
 
-# for other coding lang than Ruby
-# number % 2 == 0 
-
 # if number.even?
-#   result =  "Even"
+#   result = "even"
 # else
-#   result =  "Odd"
+#   result = "odd"
 # end
 
-result = number.even? ? "Even" : "Odd"
+result = number.even? ? "even" : "odd"
 
-p result
+puts "The number is #{result}"
+
+# def is_even(num)
+#   return num.even? ? true : false
+# end
+
+# p is_even(3)
+# p is_even(4)

@@ -1,33 +1,32 @@
 # Build an old style terminal interface
-
 puts "What do you want to do? read|write|exit"
 choice = gets.chomp
 
 # if choice == "read"
-#   puts "Reading the data..."
+#   puts "Reading data..."
 # elsif choice == "write"
-#   puts "Writing the data..."
+#   puts "Writing data..."
 # elsif choice == "exit"
-#   puts "Good bye!"
+#   puts "Bye"
 # else
-#   puts "Invalid command, choose: read|write|exit"
+#   puts "Wrong command!"
 # end
 
 # case choice
 # when "read"
-#   puts "Reading the data..."
+#   puts "Reading data..."
 # when "write"
-#   puts "Writing the data..."
+#   puts "Writing data..."
 # when "exit"
-#   puts "Good bye!"
+#   puts "Bye"
 # else
-#   puts "Invalid command, choose: read|write|exit"
+#   puts "Wrong command!"
 # end
 
-case choice
-when "read" then puts "Reading the data..."
-when "write" then puts "Writing the data..."
-when "exit" then puts "Good bye!"
+case choice.downcase
+when "read" then puts "Reading data..."
+when "write" then puts "Writing data..."
+when "exit" then puts "Bye"
 else
-  puts "Invalid command, choose: read|write|exit"
+  puts "Wrong command!"
 end

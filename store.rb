@@ -14,19 +14,19 @@
 
 
 # Build a bot telling if your store is open/close
+# store opens anytime between 9-12 and then between 14-17
 puts "What time is it (hour)?"
 hour = gets.chomp.to_i
-
-# store opens anytime between 9-12 or 14-17
 
 is_morning = hour >= 9 && hour <= 12
 is_afternoon = hour >= 14 && hour <= 17
 
 if is_morning || is_afternoon
-  result = "opened"
-else
-  result = "closed"
+  puts "We're open!"
+else 
+  puts "We're closed!"
 end
 
-puts "The store is #{result}."
-
+# && has precedence on ||
+puts true || false && false
+puts (true || false) && false
